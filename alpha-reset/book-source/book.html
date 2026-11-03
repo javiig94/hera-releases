@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ALPHA RESET — The 30-Day Protocol to Rebuild Yourself and Win Her Back</title>
+<style>
+  @page { size: 6in 9in; margin: 0; }
+  :root{
+    --ink:#111111; --paper:#FBF8F2; --gold:#C9A24A; --gold-deep:#9E7C2C;
+    --muted:#6B6761; --rule:#D8D2C6; --black:#0B0B0C; --red:#B3261E;
+    --serif:"Bitstream Charter","Caladea","GFS Baskerville",Georgia,serif;
+    --sans:"Inter Display","Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#FBF8F2}
+  body{font-family:var(--serif);color:var(--ink);font-size:10.3pt;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:6in;height:9in;position:relative;overflow:hidden;page-break-after:always;break-after:page;background:var(--paper)}
+  .page:last-child{page-break-after:auto}
+  .body{padding:0.85in 0.72in 0.9in 0.72in}
+  body{counter-reset:pg}
+  .page{counter-increment:pg}
+  .page .body:after{content:counter(pg);position:absolute;bottom:0.48in;left:0;right:0;text-align:center;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.2em;color:var(--gold-deep)}
+  .page .body:before{content:"ALPHA RESET";position:absolute;top:0.45in;left:0;right:0;text-align:center;font-family:var(--sans);font-size:6.5pt;letter-spacing:0.34em;color:#B5AD9C}
+  p{margin:0 0 0.72em 0;text-align:justify;hyphens:auto}
+  p + p{text-indent:0}
+  .lede{font-size:11.6pt;line-height:1.55}
+  .lede::first-letter{font-family:var(--sans);font-weight:800;font-size:3.1em;float:left;line-height:0.8;padding:0.08em 0.1em 0 0;color:var(--gold-deep)}
+  h2{font-family:var(--sans);font-weight:700;font-size:12.5pt;letter-spacing:-0.01em;margin:1.4em 0 0.45em;color:var(--black)}
+  h2 + p{text-indent:0}
+  .kicker{font-family:var(--sans);font-size:7.5pt;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+  .rule{height:1px;background:var(--gold);width:40px;margin:10px 0 18px}
+  /* COVER */
+  .cover{background:var(--black);color:#fff}
+  .cover .frame{position:absolute;inset:0.42in;border:1px solid rgba(201,162,74,0.55)}
+  .cover .frame:after{content:"";position:absolute;inset:6px;border:1px solid rgba(201,162,74,0.22)}
+  .cover .top{position:absolute;top:0.78in;left:0;right:0;text-align:center;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold)}
+  .cover .pain{position:absolute;top:1.55in;left:0.78in;right:0.78in;text-align:center;font-family:var(--serif);font-style:italic;font-size:17.5pt;line-height:1.3;color:#EDE6D6}
+  .cover .pain small{display:block;font-style:normal;font-family:var(--sans);font-size:7pt;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-top:14px}
+  .cover .title{position:absolute;top:3.55in;left:0;right:0;text-align:center;font-family:var(--sans);font-weight:900;font-size:62pt;letter-spacing:-0.035em;line-height:0.88;color:#fff}
+  .cover .title span{display:block;color:var(--gold);font-weight:300;letter-spacing:0.02em;font-size:44pt;margin-top:4px}
+  .cover .sub{position:absolute;top:5.35in;left:0.9in;right:0.9in;text-align:center;font-family:var(--sans);font-weight:500;font-size:10.5pt;line-height:1.45;color:#CFC7B5;letter-spacing:0.01em}
+  .cover .sub b{color:#fff;font-weight:700}
+  .cover .bottom{position:absolute;bottom:0.78in;left:0;right:0;text-align:center;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold)}
+  .cover .bottom i{display:block;font-style:normal;color:#8C8577;letter-spacing:0.18em;font-size:6.5pt;margin-top:8px}
+  .cover .seal{position:absolute;bottom:1.35in;left:50%;transform:translateX(-50%);width:62px;height:62px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:800;font-size:9pt;letter-spacing:0.1em;color:var(--gold)}
+  .cover .seal:after{content:"";position:absolute;inset:5px;border:1px solid rgba(201,162,74,0.35);border-radius:50%}
+  /* CHAPTER OPENER */
+  .opener{background:var(--black);color:#fff}
+  .opener .num{position:absolute;top:0.9in;left:0.72in;font-family:var(--sans);font-weight:900;font-size:120pt;line-height:0.8;color:rgba(201,162,74,0.16);letter-spacing:-0.05em}
+  .opener .lab{position:absolute;top:0.95in;right:0.72in;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold)}
+  .opener h1{position:absolute;top:3.1in;left:0.72in;right:0.72in;font-family:var(--sans);font-weight:800;font-size:30pt;line-height:1.05;letter-spacing:-0.025em;margin:0;color:#fff}
+  .opener .quote{position:absolute;bottom:1.1in;left:0.72in;right:0.72in;font-family:var(--serif);font-style:italic;font-size:12pt;line-height:1.5;color:#CFC7B5;border-left:2px solid var(--gold);padding-left:16px}
+  .opener .quote small{display:block;font-style:normal;font-family:var(--sans);font-size:7pt;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+  /* BOXES */
+  .box{border:1px solid var(--rule);border-left:3px solid var(--gold);padding:12px 16px;margin:14px 0 16px;background:#fff;break-inside:avoid}
+  .box .kicker{margin-bottom:6px;display:block}
+  .box p{margin:0 0 0.45em;text-align:left;text-indent:0;font-size:10.2pt}
+  .box ul,.box ol{margin:4px 0 0 0;padding-left:18px;font-size:10.2pt}
+  .box li{margin:0 0 5px}
+  .dark{background:var(--black);color:#EDE6D6;border:none;border-left:3px solid var(--gold)}
+  .dark .kicker{color:var(--gold)}
+  .pull{font-family:var(--serif);font-style:italic;font-size:14pt;line-height:1.35;color:var(--black);margin:18px 0.2in 20px;padding:14px 0;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);text-align:center;text-indent:0;break-inside:avoid}
+  ul.clean{padding-left:18px;margin:0 0 0.8em}
+  ul.clean li{margin-bottom:6px}
+  .check li{list-style:none;position:relative;padding-left:22px}
+  .check li:before{content:"";position:absolute;left:0;top:4px;width:11px;height:11px;border:1.5px solid var(--gold-deep);border-radius:2px}
+  .day{font-family:var(--sans);font-weight:700;font-size:9pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-deep);margin:14px 0 2px}
+  table{width:100%;border-collapse:collapse;font-size:9.6pt;margin:10px 0 16px;break-inside:avoid}
+  th{font-family:var(--sans);font-weight:600;font-size:7.5pt;letter-spacing:0.14em;text-transform:uppercase;text-align:left;color:var(--gold-deep);border-bottom:1px solid var(--gold);padding:6px 8px}
+  td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+  /* FRONT MATTER */
+  .tp{text-align:center;padding-top:2.4in}
+  .tp .kicker{display:block;margin-bottom:22px}
+  .tp h1{font-family:var(--sans);font-weight:900;font-size:40pt;letter-spacing:-0.03em;margin:0;line-height:0.95}
+  .tp h1 span{display:block;font-weight:300;color:var(--gold-deep);font-size:28pt}
+  .tp .s{margin:26px 0.6in 0;font-family:var(--sans);font-size:10pt;color:var(--muted);line-height:1.5}
+  .pub{position:absolute;bottom:0.9in;left:0;right:0;text-align:center;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold-deep)}
+  .copy{font-family:var(--sans);font-size:7.8pt;color:var(--muted);line-height:1.6;position:absolute;bottom:0.9in;left:0.72in;right:0.72in;text-align:left}
+  .copy p{text-align:left;text-indent:0;margin-bottom:8px}
+  .toc h1{font-family:var(--sans);font-weight:800;font-size:22pt;letter-spacing:-0.02em;margin:0 0 20px}
+  .toc ol{list-style:none;padding:0;margin:0}
+  .toc li{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:10.5pt}
+  .toc li b{font-family:var(--sans);font-weight:800;color:var(--gold-deep);font-size:9pt;width:26px;flex:none}
+  .toc li span{flex:1}
+  .toc li i{font-style:normal;font-family:var(--sans);font-size:8.5pt;color:var(--muted)}
+  .dedic{text-align:center;padding-top:3.6in;font-style:italic;font-size:12pt;color:var(--muted)}
+  .dedic p{text-align:center;text-indent:0}
+  .epi{padding-top:2.2in}
+  .epi p{text-align:left}
+  .closing{background:var(--black);color:#EDE6D6}
+  .closing .in{padding:1.2in 0.75in}
+  .closing h1{font-family:var(--sans);font-weight:800;font-size:26pt;letter-spacing:-0.02em;line-height:1.05;color:#fff;margin:0 0 20px}
+  .closing p{text-align:left;color:#CFC7B5}
+  .closing .k{color:var(--gold);font-family:var(--sans);font-size:7.5pt;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="frame"></div>
+  <div class="top">The 30-Day Protocol for Men</div>
+  <div class="pain">“She didn’t leave you.<br>She left the man you stopped being.”
+    <small>Read that again. Then fix it.</small>
+  </div>
+  <div class="title">ALPHA<span>RESET</span></div>
+  <div class="sub">Rebuild yourself from the ground up, raise your standard,<br>and become the man she <b>can’t ignore</b> — whether she comes back or not.</div>
+  <div class="seal">A·R</div>
+  <div class="bottom">Alpha Reset Press<i>Premium Edition · For Men Only</i></div>
+</section>
+
+<!-- ============ TITLE PAGE ============ -->
+<section class="page">
+  <div class="tp">
+    <span class="kicker">The 30-Day Protocol for Men</span>
+    <h1>ALPHA<span>RESET</span></h1>
+    <div class="s">Rebuild yourself from the ground up, raise your standard, and become the man she can’t ignore — whether she comes back or not.</div>
+  </div>
+  <div class="pub">Alpha Reset Press · Premium Edition</div>
+</section>
+
+<!-- ============ COPYRIGHT ============ -->
+<section class="page">
+  <div class="copy">
+    <p><b>ALPHA RESET — The 30-Day Protocol for Men.</b> Premium Edition. First published 2026.</p>
+    <p>Copyright © 2026 Alpha Reset Press. All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means — electronic, mechanical, photocopying, recording or otherwise — without the prior written permission of the publisher. This file is licensed to a single purchaser for personal use.</p>
+    <p><b>Important.</b> This book offers personal-development and relationship guidance based on the author’s experience and widely accepted principles of attraction, communication and self-respect. It is not therapy, medical advice or legal advice. Nothing in it should be used to pressure, deceive, monitor or control another person. Results depend on your situation and your effort. No outcome is guaranteed. If a breakup involved abuse, or you are experiencing thoughts of harming yourself, please speak with a professional or a local helpline today.</p>
+    <p>Set in Charter and Inter. Designed in Europe.</p>
+  </div>
+</section>
+
+<!-- ============ DEDICATION ============ -->
+<section class="page">
+  <div class="dedic">
+    <p>For every man who has stared at a phone at 2 a.m.<br>waiting for a message that never came.</p>
+    <p style="margin-top:22px;font-size:10.5pt">Put the phone down. We have work to do.</p>
+  </div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section class="page">
+  <div class="body toc">
+    <span class="kicker">Contents</span>
+    <h1>What’s inside</h1>
+    <ol>
+      <li><b>00</b><span>Before You Start: The Only Promise This Book Makes</span></li>
+      <li><b>01</b><span>The Autopsy — Why She Really Left</span><i>Diagnosis</i></li>
+      <li><b>02</b><span>Stop the Bleeding — The 7 Mistakes That Kill Your Chances</span><i>Damage control</i></li>
+      <li><b>03</b><span>The Silence Protocol — No Contact, Done Right</span><i>Days 1–30</i></li>
+      <li><b>04</b><span>The Alpha Frame — Rebuilding Your Mind</span><i>Mindset</i></li>
+      <li><b>05</b><span>The Body Standard — Discipline You Can See</span><i>Physical</i></li>
+      <li><b>06</b><span>Mission Over Mood — Purpose, Money, Momentum</span><i>Life</i></li>
+      <li><b>07</b><span>Social Proof — Rebuilding Your World</span><i>Status</i></li>
+      <li><b>08</b><span>The Reconnection — How, When, and What to Say</span><i>Contact</i></li>
+      <li><b>09</b><span>The Second Chance — Dating Her Again Without Repeating History</span><i>Rebuild</i></li>
+      <li><b>10</b><span>If She Doesn’t Come Back</span><i>The real win</i></li>
+      <li><b>+</b><span>The 30-Day Alpha Reset Calendar · Scripts Vault · Daily Scorecard</span><i>Tools</i></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 00 ============ -->
+<section class="page">
+  <div class="body">
+    <span class="kicker">Chapter 00</span>
+    <div class="rule"></div>
+    <h2 style="margin-top:0;font-size:19pt">Before You Start: The Only Promise This Book Makes</h2>
+    <p class="lede">Let’s get the uncomfortable part out of the way first. I can’t promise you she’ll come back. Nobody honest can. Anyone selling you a “guaranteed” text message or a “secret psychological trigger” that makes a grown woman reverse a decision she agonised over is selling you a fantasy — and worse, a fantasy that keeps you small, needy and stuck.</p>
+    <p>Here is what I <i>can</i> promise. If you follow this protocol for thirty days — properly, not half-heartedly between scrolling her Instagram — you will become a man with dramatically better odds. Not because of a trick. Because the version of you she walked away from will no longer exist, and women are attracted to men they can’t predict, can’t control and can’t replace. That’s not manipulation. That’s just what happens when a man gets his life together.</p>
+    <p>And if she still doesn’t come back? You’ll be standing in a better body, a clearer mind, a fuller life, with more options than you’ve had in years. Which means you win either way. That’s the only kind of game worth playing.</p>
+    <h2>How to use this book</h2>
+    <p>The book is built in three movements. <b>Chapters 1–3</b> stop the damage and explain what actually happened. <b>Chapters 4–7</b> are the rebuild — mind, body, mission, social world. <b>Chapters 8–10</b> cover reconnecting with her, dating her again without falling into old patterns, and what to do if the answer is no. At the back you’ll find the 30-Day Calendar, a Scripts Vault for every message you’ll need, and a Daily Scorecard. Print the scorecard. Fill it in every night. Men who track, change. Men who “just remember to,” don’t.</p>
+    <div class="box dark">
+      <span class="kicker">The Alpha Reset Rules</span>
+      <ol>
+        <li>You do not contact her for 30 days. No exceptions you haven’t earned.</li>
+        <li>You do the work daily. Not when motivated — daily.</li>
+        <li>You never lie, pressure, guilt-trip, monitor or play games. A man with standards doesn’t need to.</li>
+        <li>You measure yourself against who you were yesterday, not against whoever she’s talking to.</li>
+        <li>You build a life you’d keep even if she never texts again.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 01 ============ -->
+<section class="page opener">
+  <div class="num">01</div>
+  <div class="lab">Diagnosis</div>
+  <h1>The Autopsy —<br>Why She Really Left</h1>
+  <div class="quote">“Women rarely leave because of the fight. They leave because of what the fight confirmed.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">If you ask most men why their relationship ended, they’ll tell you a story about one event. The argument. The thing she said. The night out. The message she found. Men love a single cause because a single cause can be fixed with a single apology.</p>
+    <p>But breakups are almost never events. They’re <b>verdicts</b>. By the time a woman says “I can’t do this anymore,” she has usually been deciding for weeks or months — quietly collecting evidence, hoping you’d notice, and slowly withdrawing the part of herself that used to look at you with respect. The “event” just gave her permission to say out loud what she’d already concluded.</p>
+    <p>So before you can rebuild anything, you need to do an autopsy. Not to beat yourself up — self-pity is just ego wearing a sad face — but because you can’t fix a problem you keep describing wrong.</p>
+    <h2>The four verdicts</h2>
+    <p>In nearly every breakup initiated by a woman, the real reason falls into one of four categories. Be brutally honest about which one is yours. Most men have at least two.</p>
+    <p><b>1. You lost your edge.</b> At the start you had a life. Ambitions, friends, a gym, plans, an opinion. Then slowly she became the centre of your world and you became… available. Always. You stopped leading. You asked “what do you want to do?” about everything. You got comfortable. Comfort is the quiet killer of attraction, because attraction needs a little tension — the sense that this man is going somewhere and she’s lucky to be along for the ride.</p>
+    <p><b>2. You became needy or controlling.</b> These look like opposites but they’re the same disease: insecurity. Neediness says “please don’t leave me.” Control says “I won’t let you leave me.” Both tell her that your sense of worth is in her hands, and no woman wants to carry a man’s self-esteem. It’s exhausting, and eventually it feels like a trap.</p>
+    <p><b>3. You stopped being safe to be with.</b> Not physically — emotionally. The mood swings. The sulking. The sarcasm. The way every disagreement turned into a defensive war. Women tolerate a lot from a man who makes them feel safe. They tolerate very little from a man who makes them walk on eggshells.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <p><b>4. You weren’t going anywhere.</b> No direction. Same job you complain about, same weekends, same promises about “next year.” A woman can love a man who is struggling. She struggles to respect a man who has stopped trying. And respect is the oxygen of attraction — once it’s gone, affection suffocates shortly after.</p>
+    <div class="pull">Love doesn’t die. Respect dies.<br>Love just leaves with it.</div>
+    <h2>The honest autopsy exercise</h2>
+    <p>Take a pen — not your phone — and answer these on paper. You’ll keep this page. Later in the protocol you’ll come back to it.</p>
+    <div class="box">
+      <span class="kicker">Write it down</span>
+      <ol>
+        <li>What were the three things she complained about most in the last six months? (Not what you think — what she actually said.)</li>
+        <li>What did you do when she raised them? Defend, dismiss, promise, or change?</li>
+        <li>When did you last do something impressive that had nothing to do with her?</li>
+        <li>Which of the four verdicts hurts most to read? That’s the one.</li>
+        <li>If you were her best friend hearing her story, what would you have told her to do?</li>
+      </ol>
+    </div>
+    <h2>Why she can’t “just talk about it”</h2>
+    <p>Right now you probably believe that if she’d only sit down and listen, you could explain, apologise and fix it. Here’s the hard truth: she has heard the explanation before. She has heard the apology before. Words are the cheapest currency a man has, and after a breakup they’re worth almost nothing. The only thing she hasn’t seen is <b>sustained change she didn’t have to ask for</b>. That’s what this book is about. Not better words. A different man.</p>
+    <p>The rest of this chapter is one sentence long, and you need to let it land: <i>she doesn’t owe you a second chance — you have to become a man who is obviously worth one.</i></p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 02 ============ -->
+<section class="page opener">
+  <div class="num">02</div>
+  <div class="lab">Damage control</div>
+  <h1>Stop the Bleeding —<br>The 7 Mistakes That Kill Your Chances</h1>
+  <div class="quote">“Every desperate message you send is a receipt she keeps. Stop printing receipts.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Most men don’t lose their ex in the breakup. They lose her in the two weeks after it, when panic takes the wheel. If you recognise yourself in this chapter, don’t spiral — just stop. Today. The damage is rarely permanent unless you keep doing it.</p>
+    <h2>Mistake 1 — The begging phase</h2>
+    <p>“Please, just give me one more chance.” “I’ll change, I promise.” “I can’t live without you.” Every one of these confirms the verdict. You’re showing her a man whose world collapses without her — and that is precisely the man she decided she couldn’t build a life with. Begging doesn’t create attraction. It creates pity, and pity is the opposite of desire.</p>
+    <h2>Mistake 2 — The essay</h2>
+    <p>The 1,400-word message at midnight explaining everything you’ve realised. You feel better after sending it. She feels pressured, guilty and suffocated. Long messages after a breakup are not communication — they’re a man processing his emotions <i>on her</i>. Keep your realisations for your notebook. Show them with your life.</p>
+    <h2>Mistake 3 — The surveillance</h2>
+    <p>Checking her stories. Checking who liked her photo. Checking if she’s online. Asking mutual friends. Driving past. Every check is a hit of a drug that keeps you sick, and if she finds out — and they always find out — you move from “ex I have mixed feelings about” to “ex who makes me uncomfortable.” That door doesn’t reopen. Mute her. Unfollow if you need to. Block if you must.</p>
+    <h2>Mistake 4 — The sudden perfect boyfriend</h2>
+    <p>Flowers at her door. Gifts. Grand gestures. The things she asked for six months ago, now arriving in a desperate flood. She’ll see it for exactly what it is: a man doing in a panic what he couldn’t be bothered to do in peace. It reads as bargaining, not love.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>Mistake 5 — The jealousy play</h2>
+    <p>Posting photos with a new girl to “make her jealous.” Mentioning you’ve been on dates. Going cold then hot. These games are transparent, they make you look insecure, and they often push her toward the exact closure she was looking for: <i>“See? He never really cared.”</i> A man with real options doesn’t advertise them. Having options is a stance, not a performance.</p>
+    <h2>Mistake 6 — The friend trap</h2>
+    <p>Agreeing to “stay friends” so you can stay close. You answer her texts within seconds, help her move apartment, listen to her about her day — and about the guy she met. You become her emotional support with none of the benefits and all of the pain. Friendship may be possible later, from a position of strength. Right now it’s a holding pen for men who can’t let go.</p>
+    <h2>Mistake 7 — The public meltdown</h2>
+    <p>Drunk messages. Sad song lyrics on your story. Telling everyone what she did. The breakup might be the most painful thing that’s happened to you this year — and almost nobody wants to see it. Your dignity is one of the few assets you fully control. Protect it.</p>
+    <div class="box dark">
+      <span class="kicker">Damage control — do this today</span>
+      <ul>
+        <li>Send nothing. If you must say something, use the one-line closing message in Chapter 3 — once.</li>
+        <li>Mute her on every platform. Move her chat out of your main screen.</li>
+        <li>Tell your two closest friends: “I’m doing 30 days no contact. If I waver, remind me.”</li>
+        <li>Delete the drafts. All of them.</li>
+        <li>Write your worst thoughts in a notebook at night. The notebook can take it. She can’t.</li>
+      </ul>
+    </div>
+    <p>If you’ve already made three, four or all seven of these mistakes, breathe. Most men have. The next chapter is where the bleeding stops and the rebuild starts. The best thing you can do about every message you regret is to make the next thirty days so quiet, and so different, that those messages start to look like the last gasp of a man who no longer exists.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 03 ============ -->
+<section class="page opener">
+  <div class="num">03</div>
+  <div class="lab">Days 1–30</div>
+  <h1>The Silence Protocol —<br>No Contact, Done Right</h1>
+  <div class="quote">“Silence isn’t a tactic to make her miss you. It’s the space you need to become someone worth missing.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Every ex-back guide on the internet tells you to go “no contact.” Almost none of them tell you why it works, which means most men do it wrong: they go silent on the outside while obsessing on the inside, counting down the days until they can finally text her. That’s not no contact. That’s a thirty-day waiting room.</p>
+    <h2>What no contact actually does</h2>
+    <p>Three things happen when you fully step back. <b>First, the pressure comes off her.</b> Right now she associates you with guilt, conflict and the exhausting job of managing your feelings. Silence lets that fade and lets the good memories surface — which they will, if you stop poisoning them. <b>Second, you break the addiction.</b> Your brain is in withdrawal. Every contact resets the clock. Thirty clean days is the minimum for your head to clear enough to make a rational decision about whether you even want her back, or just want the pain to stop. <b>Third — and this is the one that matters — you get the time to change.</b> Not to say you’ve changed. To actually do it.</p>
+    <div class="pull">No contact doesn’t work because she notices your absence.<br>It works because of what you do with it.</div>
+    <h2>The rules</h2>
+    <div class="box">
+      <span class="kicker">The Silence Protocol — 30 days</span>
+      <ul>
+        <li><b>No messages, calls, likes, comments, views or reactions.</b> None. Not “happy birthday.” Not “hope you’re ok.”</li>
+        <li><b>No indirect contact.</b> No messages through friends. No posting things aimed at her. No “accidentally” showing up where she is.</li>
+        <li><b>No checking.</b> Her profiles, her location, her friends’ stories. If you can’t resist, block. Blocking isn’t weakness; it’s a man removing a weapon he keeps using on himself.</li>
+        <li><b>If she contacts you:</b> be warm, brief, and busy. Reply hours later, not seconds. Don’t reopen the relationship conversation. (Scripts in the Vault.)</li>
+        <li><b>Exceptions:</b> shared children, shared lease, returning essential belongings. Keep it logistical, friendly and short. Then back to silence.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>The one message you’re allowed to send</h2>
+    <p>If the breakup ended with you begging, arguing, or leaving things in chaos, you can send <i>one</i> short closing message in the first 48 hours. Its purpose is not to win her back. Its purpose is to replace the last memory she has of you — a desperate man — with a composed one. Then you go dark.</p>
+    <div class="box">
+      <span class="kicker">The closing message (send once, then silence)</span>
+      <p>“Hey. I’ve had some time to think and I want to say this once, properly: you were right to end it, and I’m sorry for how I handled it afterwards. I’m going to give us both space. I genuinely hope you’re doing well.”</p>
+      <p style="font-size:9pt;color:var(--muted)">No questions. No “let me know if you ever…”. No reply needed. If she answers, thank her warmly and don’t continue the thread.</p>
+    </div>
+    <h2>What silence feels like, week by week</h2>
+    <p><b>Days 1–7: The withdrawal.</b> This is the hardest week of the whole protocol. You’ll feel physical urges to check your phone. You’ll replay conversations. You’ll be convinced she’s already moved on. None of this is information — it’s chemistry. Treat it like a detox: hydrate, train hard, sleep, and don’t make decisions after 9 p.m.</p>
+    <p><b>Days 8–14: The anger.</b> As the fog lifts, resentment often arrives. You’ll remember things she did. Good. Anger is more useful than grief — it has energy in it. Pour it into the gym and the mission. Don’t pour it into a message.</p>
+    <p><b>Days 15–21: The clarity.</b> You start having hours — then whole days — where you don’t think about her. You notice other women noticing you. You’ll feel guilty about it. Don’t. This is what a man with a life feels like.</p>
+    <p><b>Days 22–30: The choice.</b> By now you’re a different man, and you get to ask a question you couldn’t answer on day one: <i>Do I want her back — or did I just want to stop hurting?</i> Only a man who can honestly answer “I’d be fine without her, and I’d still choose her” is ready for Chapter 8.</p>
+    <h2>If she reaches out during silence</h2>
+    <p>Roughly half of the men who do this protocol properly hear from her before the thirty days are up. A “how are you,” a shared meme, a “I saw this and thought of you.” Do not treat it as a victory, and do not treat it as an invitation to pour your heart out. She’s testing the temperature. Your job is to show her a man who is warm, calm and <i>clearly not waiting</i>. Reply the same day, not the same minute. Two or three friendly lines. End the conversation first. And then — this is the part men fail — go back to silence. You are not done yet. Thirty days means thirty days.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 04 ============ -->
+<section class="page opener">
+  <div class="num">04</div>
+  <div class="lab">Mindset</div>
+  <h1>The Alpha Frame —<br>Rebuilding Your Mind</h1>
+  <div class="quote">“An alpha isn’t the loudest man in the room. He’s the one who doesn’t need the room to agree with him.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Forget the internet version of “alpha” — the guy shouting about dominance from a rented Lamborghini. That man is performing for other insecure men. Real masculine strength is quieter and much more attractive. It’s a man whose mood doesn’t depend on who texted him. Who says what he means. Who has a direction and doesn’t need permission to walk it. Who can hear “no” without collapsing or attacking. Women don’t leave that man. They worry about losing him.</p>
+    <h2>Frame: the thing she actually responds to</h2>
+    <p>Your “frame” is the set of assumptions you carry into every interaction. The needy frame says: <i>she decides my worth.</i> The alpha frame says: <i>I know my worth; she gets to decide if she wants to be near it.</i> Same man, same words — completely different energy, and women read energy before they read words. You cannot fake frame for long, which is why this chapter comes before any talk of reconnection. You have to actually believe it. And belief, for men, comes from evidence: things you’ve done.</p>
+    <h2>The four pillars of the alpha frame</h2>
+    <p><b>1. Self-respect before approval.</b> Every day, do one thing that is hard and private — something nobody will praise you for. A cold shower. Fifty extra push-ups. Finishing the task you’d normally avoid. Self-respect is built by keeping promises to yourself when no one is watching. It’s the only kind that doesn’t need her.</p>
+    <p><b>2. Emotional control, not emotional suppression.</b> You’re allowed to feel everything. You’re not allowed to let it drive. The rule: feel it, name it, then choose the action a man you respect would take. Write it in the notebook. Train it out. Talk to a friend or a professional. What you don’t do is dump it on her, drown it in alcohol, or pretend it isn’t there until it explodes.</p>
+    <p><b>3. Outcome independence.</b> You want her back. Fine. But the moment you <i>need</i> her back, you lose the frame — and she feels it instantly. Practise wanting things without needing them: ask for the raise and be fine with the no; invite the friend and be fine with the cancel. Needing less makes you magnetic. It’s not a trick; it’s what freedom looks like from the outside.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <p><b>4. Direction.</b> A man with a mission is attractive to women and respected by men because he is <i>going somewhere</i>, and people are drawn to motion. The mission doesn’t need to be grand. It needs to be yours, and it needs to be visible in your calendar. Chapter 6 builds it.</p>
+    <div class="pull">Needy men ask, “Does she still love me?”<br>Grounded men ask, “Am I becoming someone I respect?”</div>
+    <h2>The daily mind protocol (15 minutes)</h2>
+    <div class="box">
+      <span class="kicker">Morning — 10 minutes</span>
+      <ul>
+        <li><b>No phone for the first 30 minutes.</b> Your attention is yours before it’s anyone else’s.</li>
+        <li><b>Three lines in the notebook:</b> the one thing that matters today · the one thing I’m avoiding · the one way I’ll act like the man I respect.</li>
+        <li><b>Two minutes of stillness.</b> Sit, breathe slowly, let the thoughts about her pass without following them. This is a rep, not a vibe.</li>
+      </ul>
+      <span class="kicker" style="margin-top:10px">Night — 5 minutes</span>
+      <ul>
+        <li><b>Scorecard</b> (back of the book): did I train, did I work the mission, did I keep silence, did I keep my word to myself?</li>
+        <li><b>One win.</b> Write it. Small is fine. Men who notice their wins build momentum; men who only notice her build nothing.</li>
+      </ul>
+    </div>
+    <h2>Kill the inner narrator</h2>
+    <p>You have a voice in your head that has been running the same script for weeks: <i>I ruined it. She’s happier now. I’ll never find anyone like her. There’s something wrong with me.</i> That voice is not insight. It’s the sound of a nervous system in pain. Don’t argue with it — you’ll lose — just notice it and move your body. Walk, lift, run, swim. Thought follows action far more than action follows thought. Every man who has come out of a breakup stronger will tell you the same thing: he didn’t think his way out. He worked his way out, and the thinking caught up.</p>
+    <p>One more thing about the alpha frame, and it’s important: it includes kindness. The strongest men you know are not cruel. They don’t need to be. Cruelty is what weak men use to look strong. If any of this book makes you harder toward her, toward women, or toward yourself — you’ve misread it. The goal is a man who is solid enough to be gentle.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 05 ============ -->
+<section class="page opener">
+  <div class="num">05</div>
+  <div class="lab">Physical</div>
+  <h1>The Body Standard —<br>Discipline You Can See</h1>
+  <div class="quote">“Your body is the first thing she’ll notice has changed — because it’s the one thing you can’t fake in a text.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">You are not going to out-argue her verdict. You are going to out-<i>live</i> it, and the most undeniable evidence of a changed man is a changed body. Not a magazine cover — that takes years. Just a man who is visibly leaner, stands taller, dresses with intention and moves like someone who takes himself seriously. Thirty days is enough for people to see it. Especially her.</p>
+    <h2>Why the body matters more than you think</h2>
+    <p>It isn’t only about attraction, though attraction is real and you shouldn’t pretend otherwise. Training is the fastest way to regulate a broken nervous system. It burns off the anxiety that would otherwise turn into a 2 a.m. text. It gives you a daily, private win. It puts you around other men. And it builds the one thing every pillar of the alpha frame rests on: the proof that you can tell yourself to do something hard and then do it.</p>
+    <h2>The 30-day body protocol</h2>
+    <div class="box">
+      <span class="kicker">Non-negotiables</span>
+      <ul>
+        <li><b>Train 5 days a week, 45–60 minutes.</b> Three strength sessions (push / pull / legs — compound lifts, progressive overload) plus two conditioning sessions (hard intervals, hill sprints, boxing, swimming). If you’re new, hire a coach for a month. It’s the best $200 you’ll spend this year.</li>
+        <li><b>Walk 10,000 steps a day.</b> Non-negotiable. Walks are where men think clearly.</li>
+        <li><b>Protein at every meal, no alcohol for 30 days.</b> Alcohol is the engine of almost every regret message ever sent. Remove it entirely.</li>
+        <li><b>Sleep 7–8 hours.</b> In bed by 11 with the phone in another room. Half of “heartbreak” is exhaustion.</li>
+        <li><b>Sun and cold.</b> Ten minutes of morning daylight; end every shower with 60 seconds of cold. Both are cheap, both work, both are reps in doing hard things.</li>
+      </ul>
+    </div>
+    <h2>Presentation: the upgrade she notices in 3 seconds</h2>
+    <p>Most men who lose their edge also let their presentation slide — the same three t-shirts, the overgrown haircut, the shoes they’ve worn since university. Fix it in one weekend. It’s not vanity; it’s respect for yourself made visible.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <table>
+      <tr><th>Area</th><th>The standard</th><th>Cost</th></tr>
+      <tr><td><b>Hair &amp; beard</b></td><td>A proper barber, not a $10 cut. Ask for something sharper than you’d choose yourself. Maintain every 3 weeks.</td><td>$25–40</td></tr>
+      <tr><td><b>Skin</b></td><td>Cleanser morning and night, moisturiser with SPF. Thirty days is enough to see the difference.</td><td>$20</td></tr>
+      <tr><td><b>Scent</b></td><td>One good fragrance, two sprays. Smell is memory — choose something she’s never smelt on you.</td><td>$60–90</td></tr>
+      <tr><td><b>Wardrobe</b></td><td>Fit over brand. Dark jeans that actually fit, two plain quality t-shirts, one overshirt or jacket, clean white sneakers, one pair of boots. Bin anything faded or baggy.</td><td>$200–300</td></tr>
+      <tr><td><b>Posture</b></td><td>Shoulders back, chin level, slow movements. Film yourself walking once. Fix what you see.</td><td>Free</td></tr>
+      <tr><td><b>Teeth</b></td><td>Dental clean. Whitening strips if needed. A clean smile reads as a man who looks after himself.</td><td>$60–120</td></tr>
+    </table>
+    <div class="pull">She fell for a man with standards.<br>Then she watched him lower them. Raise them back.</div>
+    <h2>Week-by-week targets</h2>
+    <p><b>Week 1</b> — Establish the routine. Don’t chase intensity; chase attendance. Five sessions, no alcohol, phone out of the bedroom. <b>Week 2</b> — Add load. Note your lifts; beat them. Barber, wardrobe reset. <b>Week 3</b> — You’ll look different in the mirror now. Take a progress photo (for you, not for Instagram). <b>Week 4</b> — Push. This is the week you’ll be seen again, so finish strong. By day 30 most men are down 4–9 lbs (2–4 kg) of fat, visibly sharper in the face, and — far more important — carrying themselves like someone who made a decision.</p>
+    <p>A warning that applies to every chapter: none of this is a performance for her. If the only reason you’re training is to be seen, you’ll stop the day she texts you back — and she’ll notice that too. Train because a man who respects himself trains. The rest follows.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 06 ============ -->
+<section class="page opener">
+  <div class="num">06</div>
+  <div class="lab">Life</div>
+  <h1>Mission Over Mood —<br>Purpose, Money, Momentum</h1>
+  <div class="quote">“A man without a mission makes his woman the mission. And no woman wants to be a man’s entire job.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Go back to your autopsy. Somewhere in it is the moment she became the centre of your universe — and your own life started orbiting her. That moment is where the attraction began to die, because the most attractive quality a man can have is <i>a life she wants to be part of</i>. Not a life that’s about her. A life that was already in motion before her and would keep moving without her.</p>
+    <h2>Pick the mission</h2>
+    <p>You don’t need to find your “purpose” in thirty days. You need to pick one concrete, slightly scary objective that you can make real progress on in a month and that would make you respect yourself more. Examples that have worked for men on this protocol:</p>
+    <ul class="clean">
+      <li>Launch the side business you’ve talked about for two years — first paying customer in 30 days.</li>
+      <li>Get the promotion or the new job: CV rewritten, 20 applications, 5 interviews booked.</li>
+      <li>Learn to fight: 12 boxing or BJJ sessions in a month.</li>
+      <li>Fix your money: full budget, debt plan, first $1,000 saved or invested.</li>
+      <li>Build the skill: 30 days of coding / a language / an instrument, with a public output at the end.</li>
+      <li>Book and take the solo trip you never did because she didn’t fancy it.</li>
+    </ul>
+    <p>The test: would a man you admire be impressed? Would <i>she</i> be a little surprised? If the answer to both is yes, that’s your mission.</p>
+    <div class="box">
+      <span class="kicker">The 30-day mission plan</span>
+      <ol>
+        <li><b>Define the finish line</b> in one sentence with a number in it.</li>
+        <li><b>Block 90 minutes a day</b> in your calendar — before work or straight after the gym. Protect it like a flight.</li>
+        <li><b>Tell one man</b> what you’re doing and when you’ll report back.</li>
+        <li><b>Weekly review:</b> every Sunday, 20 minutes — what moved, what didn’t, what changes.</li>
+        <li><b>Ship something visible</b> by day 30: a product, a certificate, a result, a photo. Evidence.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>Money: the quiet signal</h2>
+    <p>Money isn’t attraction, but <i>chaos</i> is repulsion. A man who is behind on bills, impulsive with spending and vague about his future is signalling to a woman that building a life with him means building it alone. You don’t need to be rich. You need to be in control. In thirty days: know your numbers to the dollar, cut three subscriptions you don’t use, stop paying for things to feel better, and set up an automatic transfer to savings the day you get paid. Control over money is control over your life, and women feel that control in the way a man carries himself.</p>
+    <h2>Momentum: the only mood stabiliser that works</h2>
+    <p>You’ll have days where none of this feels worth it. Where the only thing you want is to text her and ask if she misses you. The answer to that day is not motivation — motivation is a feeling and feelings are unreliable. The answer is <b>momentum</b>: a calendar that tells you what to do when you don’t feel like doing anything. Gym at 7. Mission block at 8:30. Walk at lunch. Scorecard at 10. When the mood is bad, you don’t negotiate. You just do the next block. By the end of the day the mood has usually caught up with the action.</p>
+    <div class="pull">Mood is what you feel.<br>Mission is what you do anyway.</div>
+    <h2>The “what are you up to?” test</h2>
+    <p>Here’s a practical reason all of this matters. When you eventually reconnect with her — or meet someone new — she will ask, in some form, “so what have you been up to?” The man who lost her answers with a shrug: “not much, work, you know.” The man who did this protocol answers with a sentence that contains a mission, a result and zero mention of her. That single sentence does more than any apology could, because it isn’t a claim about change. It’s proof.</p>
+    <p>Write that sentence now, as you’d want it to sound on day 30. Then spend the month making it true.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 07 ============ -->
+<section class="page opener">
+  <div class="num">07</div>
+  <div class="lab">Status</div>
+  <h1>Social Proof —<br>Rebuilding Your World</h1>
+  <div class="quote">“She didn’t fall for you in a vacuum. She fell for the man her friends said she was lucky to have.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">One of the most common patterns in the autopsy is isolation. Somewhere along the way the friends got fewer, the weekends got smaller, and your social life became her social life. Then she left and took the whole world with her. Rebuilding it isn’t optional, and it isn’t only about filling the time. A man with a full social world is more attractive, more stable, and far less likely to send the message that ruins everything.</p>
+    <h2>Rebuild the brotherhood</h2>
+    <p>Men need other men. Not to “talk about feelings” necessarily — although that’s fine too — but to compete, build, train, laugh and be held to a standard. In the next thirty days: reconnect with the three friends you let drift. Join one thing with a fixed schedule — a martial arts gym, a run club, a five-a-side team, a climbing group. Say yes to invitations you would normally decline. Host something: a barbecue, a poker night, a Sunday hike. The man who hosts is the man who has a world.</p>
+    <h2>Meet women — without making it a tactic</h2>
+    <p>This is where most ex-back guides get sleazy and most men get it wrong. You are not going to date other women to make her jealous, and you are not going to post it. You are going to talk to women — at the gym, at events, through friends, on apps if you like — because a man who is rebuilding his life <i>talks to people</i>, and because nothing dissolves neediness faster than discovering that the woman who left is not the only woman on earth who finds you interesting.</p>
+    <p>Keep it light and honest. You don’t need to lie about being fresh out of a relationship; “I’m not looking for anything serious right now, but I’d like to get to know you” is respectful and attractive. If something real develops, be honest with yourself about what you want. Many men start this protocol to get her back and finish it realising they don’t need to.</p>
+    <div class="pull">Options don’t make you arrogant.<br>They make you calm. Calm is magnetic.</div>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>Your social media: close the window</h2>
+    <p>She will look. Almost all of them do, usually in week two or three. What she should find is not a performance aimed at her, and not a sad void either. The rule is simple: post what a man with a full life would post, at the frequency he’d post it. A training clip. A dinner with friends. The mission in progress. The trip. Nothing cryptic, nothing with song lyrics, nothing that could be read as “this is about you.” One or two posts a week is plenty. Men who post daily after a breakup look like they’re campaigning.</p>
+    <div class="box">
+      <span class="kicker">The social rebuild — 30-day checklist</span>
+      <ul class="check">
+        <li>Message the three friends you let drift. Make a plan with each, not “we should catch up.”</li>
+        <li>Join one scheduled activity with other men. Attend every session.</li>
+        <li>Host one thing.</li>
+        <li>Say yes to three invitations you’d normally decline.</li>
+        <li>Have five real conversations with women you don’t know. No agenda beyond the conversation.</li>
+        <li>Clean your profiles: remove the sad, the cryptic and the couple photos. Keep the respectful ones if you want; delete nothing in anger.</li>
+        <li>Post 1–2 times a week. Life, not messages.</li>
+      </ul>
+    </div>
+    <h2>Mutual friends: the only rule</h2>
+    <p>They will ask about her. They will tell you things. Some will try to carry messages. Your line, every time, warm and final: <i>“I wish her well. I’m focused on my own stuff at the moment — how are you?”</i> You never ask what she’s doing. You never ask who she’s seeing. You never send anything through them. If they report back to her — and they will — the report is of a man who is kind, busy and not waiting. That report does more for you than any message you could have sent.</p>
+    <p>By the end of this chapter you’ll notice something: the thirty days are nearly up, and the thought of texting her feels different. Less like oxygen. More like a choice. That is exactly where you need to be before you read Chapter 8.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 08 ============ -->
+<section class="page opener">
+  <div class="num">08</div>
+  <div class="lab">Contact</div>
+  <h1>The Reconnection —<br>How, When, and What to Say</h1>
+  <div class="quote">“You get one first message. Make it sound like it came from a man who doesn’t need a reply.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Thirty days are done. You’re leaner, clearer, busier and more yourself than you’ve been in a year. Before you type a word, answer the readiness test honestly — because reconnecting a day too early with the wrong frame undoes a month of work.</p>
+    <div class="box dark">
+      <span class="kicker">Readiness test — all five must be yes</span>
+      <ol>
+        <li>Have I done 30 full days of silence?</li>
+        <li>Can I describe what I changed in concrete terms, with evidence, without mentioning her?</li>
+        <li>Would I be genuinely okay if she didn’t reply?</li>
+        <li>Do I want <i>her</i>, or do I want to stop feeling rejected?</li>
+        <li>Am I prepared to walk away cleanly if she says no?</li>
+      </ol>
+    </div>
+    <h2>The first message</h2>
+    <p>The first message has one job: to be easy to answer and impossible to feel pressured by. It is short, light, specific and warm. It does not mention the relationship, the breakup, your feelings or your changes. It references something real — a shared memory, something she’d find funny, something genuinely useful to her — and it has no question that demands a serious answer.</p>
+    <div class="box">
+      <span class="kicker">First-message templates (pick one, personalise it)</span>
+      <p><b>The memory:</b> “Just walked past [that place] and they’ve finally fixed the sign. Took them long enough. Hope you’re good.”</p>
+      <p><b>The useful one:</b> “Saw [thing she’s into] is doing [event] in [month] — thought you’d want to know before it sells out.”</p>
+      <p><b>The light one:</b> “Your mum’s lasagne recipe has officially been attempted. 6/10. The family honour is safe.”</p>
+      <p style="font-size:9pt;color:var(--muted)">Send mid-week, early evening. Never after 10 p.m. Never after drinking. Then put the phone away and go train.</p>
+    </div>
+    <h2>If she replies warmly</h2>
+    <p>Match her energy, don’t exceed it. Keep the exchange short — three to six messages — and end it first, on a high. Leave two or three days. Then a second light message. On the second or third conversation, you suggest something low-pressure and specific: a coffee, a walk, a drink after work. “Fancy a coffee Thursday? I’ll be near yours around six.” Clear, confident, easy to say no to.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>If she replies coldly, or not at all</h2>
+    <p>No reply within a week is a reply. A short, flat answer is a reply. In both cases you do nothing. No follow-up, no “did you get my message,” no second attempt for at least three weeks. Then one more light message — and if that gets nothing, you have your answer, and Chapter 10 is for you. A man who sends four unanswered messages has told her everything she needed to know about whether he changed.</p>
+    <h2>The first meeting</h2>
+    <p>This is the moment all the work was for. She’s going to see the body, the clothes, the posture, the calm — before you say a word. Your job is to let her.</p>
+    <ul class="clean">
+      <li><b>Keep it under 90 minutes.</b> Leave her wanting more. You have somewhere to be — because you actually do.</li>
+      <li><b>Don’t bring up the relationship.</b> If she does, listen, acknowledge, and don’t litigate. “Yeah. You were right about a lot of that.” Then move on.</li>
+      <li><b>Talk about your life</b> — the mission, the training, the people — without turning it into a presentation. One sentence, then a question about her.</li>
+      <li><b>Be warm. Be playful. Be a little unavailable.</b> Not cold. Just a man whose evening doesn’t depend on how this goes.</li>
+      <li><b>End it first.</b> “This was nice. I’ve got to get going — let’s do it again.” Then go.</li>
+    </ul>
+    <h2>The conversation about “us”</h2>
+    <p>At some point — usually the second or third meeting — one of you will raise it. Let it be her if you can. When it comes, you say the thing a changed man says, once, and clearly:</p>
+    <div class="box">
+      <span class="kicker">The honest script</span>
+      <p>“I’m not going to pretend the last few months didn’t happen. I took a hard look at who I’d become and I didn’t like him much. So I’ve been changing it — for me, not to get you back. But I’d be lying if I said I didn’t still care about you. If you ever wanted to see what this looks like now, I’d be up for that. If not, I understand, and I’m genuinely glad we can still sit here like this.”</p>
+    </div>
+    <p>No pressure. No ultimatum. No list of promises. You’ve shown the change; you don’t need to sell it. And whatever she says, you stay the same man you walked in as. If it’s yes, Chapter 9. If it’s no — or “I need time” — you nod, you mean it, and you go back to your life. That calm, more than anything, is what makes women change their minds. And if it doesn’t, it’s what lets you keep yours.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 09 ============ -->
+<section class="page opener">
+  <div class="num">09</div>
+  <div class="lab">Rebuild</div>
+  <h1>The Second Chance —<br>Dating Her Again Without Repeating History</h1>
+  <div class="quote">“Getting her back is easy compared to keeping her — because this time she’s watching for the old you.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">So she said yes. Congratulations — and be careful. The weeks after a reconciliation are the most dangerous in the whole process, because relief makes men lazy. The gym slips. The mission slips. The phone comes back to the bedside table. And within two months she is looking at the same man she left, now with the added resentment of having been talked into a second chance.</p>
+    <h2>Rule 1 — It’s a new relationship, not a resumed one</h2>
+    <p>Do not pick up where you left off. Date her. Properly. Plan things. Lead. Be the man from the first three months, except this time with the maturity of a man who’s done the work. Don’t rush back into living together, joint plans or “so are we official?” Let her feel chosen, not reinstated. And let yourself keep the life you built — the friends, the training, the mission block. That life is the reason she’s here.</p>
+    <h2>Rule 2 — Address the autopsy, once, together</h2>
+    <p>Early in the new relationship — not the first week, not the fifth month — have one honest conversation about what went wrong. You go first, with your verdicts from Chapter 1. Not as a confession, as a plan: “I let myself become passive and I made you carry too much. Here’s what I do differently now, and here’s what I’d like you to tell me if you ever see the old pattern.” Then listen to hers without defending. One conversation. Then you both act, and you don’t relitigate it every argument.</p>
+    <div class="pull">The old relationship ended because of patterns.<br>The new one only survives if the patterns don’t.</div>
+    <h2>Rule 3 — Keep the standards that got her back</h2>
+    <p>Everything from Chapters 4–7 stays. Train five days. Protect the mission. Keep your friends. Keep your word to yourself. The moment she becomes your whole world again, you’re back on the road to the same verdict. A woman wants to be a man’s priority, not his entire purpose. There’s a difference, and she can feel it.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>Rule 4 — Lead the relationship</h2>
+    <p>Leading isn’t bossing. It’s taking the initiative so she doesn’t have to carry the planning, the decisions and the emotional weather. Plan the dates. Make the reservation. Say what you want for dinner. Notice when she’s off and ask once, properly, instead of sulking until she explains. Handle conflict like a man who isn’t afraid of it: calm voice, clear point, willingness to be wrong, no scorekeeping, no silent treatment. Leading is the daily proof that she chose a man and not a project.</p>
+    <h2>Rule 5 — Watch for the trust test</h2>
+    <p>She will test you. Not cruelly — instinctively. A sharp comment, a plan that falls through, a bad mood aimed at you. She’s checking whether the new man is real or a thirty-day costume. Pass by staying exactly who you are: unbothered, kind, firm. You don’t collapse, you don’t attack, you don’t beg. “Sounds like a rough day. I’m going to the gym — let me know if you want to grab food later.” Then go. Every test you pass calmly is a brick in the new foundation.</p>
+    <div class="box">
+      <span class="kicker">The 90-day keep-her protocol</span>
+      <ul class="check">
+        <li>One planned date a week that you lead, start to finish.</li>
+        <li>Training and mission block untouched. Non-negotiable.</li>
+        <li>One night a week with your friends. She has her own.</li>
+        <li>Phone out of the bedroom. Still.</li>
+        <li>One honest conversation about patterns — then let it go.</li>
+        <li>Zero scorekeeping about the breakup. It’s closed.</li>
+        <li>Monthly check-in with yourself: am I still a man I respect?</li>
+      </ul>
+    </div>
+    <h2>Rule 6 — Know when to walk</h2>
+    <p>Sometimes the second chance reveals something you couldn’t see the first time: that she uses the breakup as leverage, that the contempt never left, that you are being tolerated rather than wanted. The man who did this protocol has the strength to see it — and the options to act on it. Getting her back was never the goal. The goal was becoming a man who doesn’t stay where he isn’t respected, in either direction. If that’s what this chapter reveals, you haven’t failed. You’ve graduated.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 10 ============ -->
+<section class="page opener">
+  <div class="num">10</div>
+  <div class="lab">The real win</div>
+  <h1>If She Doesn’t<br>Come Back</h1>
+  <div class="quote">“The point was never to win her back. The point was to become a man who could.”<small>Alpha Reset</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <p class="lede">Some of you will reach this chapter after a no. Some after silence. Some after a second chance that showed you what you needed to see. However you got here, read this carefully, because it’s the most important chapter in the book — and it’s the reason the book is called a reset and not a reconquest.</p>
+    <h2>What you actually did</h2>
+    <p>Look at your scorecard. Thirty days ago you were a man staring at a phone, running on no sleep, convinced his worth was in someone else’s hands. Now count it: the sessions trained, the weight lost, the mission moved, the friends recovered, the conversations had, the promises kept to yourself, the thirty days of silence you didn’t think you could do. None of that was for her, whatever you told yourself on day one. It was for the man in the mirror, and he’s standing differently now.</p>
+    <p>You will grieve. That’s allowed. Grief is the price of having loved someone properly, and a man who can grieve without collapsing is a man who can love again without fear. Let it come — in the notebook, on the hard run, with a friend, with a professional if it’s heavy. What you don’t do is translate the grief into a message, a plea, or a story in which you were the only one who failed. You weren’t. Relationships end between two people.</p>
+    <div class="pull">You didn’t lose the girl and gain a lesson.<br>You lost a version of yourself and gained a better one.</div>
+    <h2>The 60-day rule</h2>
+    <p>After a final no, give it sixty days of continued protocol before you make any big decision — moving, quitting, changing cities, dating seriously. Keep training, keep the mission, keep the friends. Men who do this report the same thing: around week six, they wake up and realise they haven’t thought about her in days — and the realisation doesn’t hurt. That’s the moment the reset completes. You can’t rush it. You can only keep showing up for it.</p>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <h2>What comes next</h2>
+    <p>Here’s what nobody tells you about a man who has done this work: the next woman he meets gets the best version of him from day one. Not the needy version, not the controlling version, not the comfortable version who stopped trying. The grounded one. And she’ll notice — they always do — because a man with frame, standards, a mission and a full life is rare, and rare things get valued. You’ll find that the dynamic that felt impossible with your ex is suddenly natural: you lead, she follows, you both respect each other, nobody is carrying the other’s self-worth. That isn’t luck. That’s the protocol working exactly as designed.</p>
+    <h2>If she comes back later</h2>
+    <p>It happens more than you’d think — three months, six months, a year on, a message appears. “I’ve been thinking about you.” By then you’ll be a man who can meet it calmly. You can say yes, if you still want her and she’s done her own work. You can say no, kindly, if you’ve moved on. Or you can say “let’s have a coffee and see” — from a position where the outcome doesn’t own you. Whatever you choose, you’ll choose it as a man, not as a man in withdrawal. That’s the entire difference.</p>
+    <h2>The last rule</h2>
+    <p>Don’t stop. The thirty days were a reset, not a finish line. The alpha frame, the body standard, the mission, the brotherhood — these aren’t a breakup programme. They’re how a man lives. The ones who keep them don’t just get a second chance with one woman. They get a different life. And they stop needing books like this.</p>
+  </div>
+</section>
+<!-- ============ CLOSING LINE (mirrors the dedication) ============ -->
+<section class="page">
+  <div class="dedic">
+    <p>You did the work. Go live like it.</p>
+    <p style="margin-top:22px;font-style:normal;font-family:var(--sans);font-size:8pt;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-deep)">— Alpha Reset</p>
+  </div>
+</section>
+
+<!-- ============ TOOLS: 30-DAY CALENDAR ============ -->
+<section class="page opener">
+  <div class="num">+</div>
+  <div class="lab">Tools</div>
+  <h1>The 30-Day<br>Alpha Reset Calendar</h1>
+  <div class="quote">“Don’t read it. Run it.”<small>Instructions</small></div>
+</section>
+<section class="page">
+  <div class="body">
+    <span class="kicker">Week 1 — Stop the bleeding</span>
+    <div class="rule"></div>
+    <table>
+      <tr><th>Day</th><th>Focus</th><th>Non-negotiable</th></tr>
+      <tr><td><b>1</b></td><td>Closing message (if needed). Mute her everywhere. Delete drafts.</td><td>Train. No alcohol. Autopsy on paper.</td></tr>
+      <tr><td><b>2</b></td><td>Tell two friends you’re doing 30 days. Phone out of bedroom.</td><td>Train. 10k steps.</td></tr>
+      <tr><td><b>3</b></td><td>Pick the mission. Write the finish line with a number in it.</td><td>Mission block 90 min. Train.</td></tr>
+      <tr><td><b>4</b></td><td>Full money audit. Cancel 3 subscriptions. Set up auto-saving.</td><td>Conditioning session.</td></tr>
+      <tr><td><b>5</b></td><td>Message the three friends you let drift. Make real plans.</td><td>Train. Scorecard.</td></tr>
+      <tr><td><b>6</b></td><td>Barber. Wardrobe cull. Buy the basics.</td><td>Long walk. Phone away.</td></tr>
+      <tr><td><b>7</b></td><td>Weekly review. Rest day. Notebook: hardest moment, how you handled it.</td><td>Sleep 8h.</td></tr>
+    </table>
+    <span class="kicker">Week 2 — Build the frame</span>
+    <div class="rule"></div>
+    <table>
+      <tr><th>Day</th><th>Focus</th><th>Non-negotiable</th></tr>
+      <tr><td><b>8</b></td><td>Join a scheduled activity with other men. First session this week.</td><td>Train — add load.</td></tr>
+      <tr><td><b>9</b></td><td>Morning protocol daily from here. Cold finish on every shower.</td><td>Mission block.</td></tr>
+      <tr><td><b>10</b></td><td>Host or plan one thing for next weekend.</td><td>Conditioning.</td></tr>
+      <tr><td><b>11</b></td><td>Have a real conversation with a woman you don’t know. No agenda.</td><td>Train.</td></tr>
+      <tr><td><b>12</b></td><td>Dentist / skincare / fragrance sorted.</td><td>Mission block.</td></tr>
+      <tr><td><b>13</b></td><td>Say yes to an invitation you’d normally refuse.</td><td>Train.</td></tr>
+      <tr><td><b>14</b></td><td>Weekly review. Progress photo (for you). Anger check: where is it going?</td><td>Rest. Sleep.</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <span class="kicker">Week 3 — Momentum</span>
+    <div class="rule"></div>
+    <table>
+      <tr><th>Day</th><th>Focus</th><th>Non-negotiable</th></tr>
+      <tr><td><b>15</b></td><td>Clean your profiles. First “life” post of the week.</td><td>Train. Beat last week’s lifts.</td></tr>
+      <tr><td><b>16</b></td><td>Mission: ship an intermediate result. Tell your accountability man.</td><td>Mission block.</td></tr>
+      <tr><td><b>17</b></td><td>Two more conversations with women. Light, honest.</td><td>Conditioning.</td></tr>
+      <tr><td><b>18</b></td><td>The hosted thing happens this week. Lead it.</td><td>Train.</td></tr>
+      <tr><td><b>19</b></td><td>Write the “what have you been up to?” sentence as it stands today.</td><td>Mission block.</td></tr>
+      <tr><td><b>20</b></td><td>Hard session. The one you’d usually skip.</td><td>Train.</td></tr>
+      <tr><td><b>21</b></td><td>Weekly review. Honest question: do I want her, or the pain to stop?</td><td>Rest. Sleep.</td></tr>
+    </table>
+    <span class="kicker">Week 4 — Finish strong</span>
+    <div class="rule"></div>
+    <table>
+      <tr><th>Day</th><th>Focus</th><th>Non-negotiable</th></tr>
+      <tr><td><b>22</b></td><td>Mission final push begins. Finish line in sight.</td><td>Train.</td></tr>
+      <tr><td><b>23</b></td><td>Re-read your autopsy. Tick what’s changed. Note what hasn’t.</td><td>Mission block.</td></tr>
+      <tr><td><b>24</b></td><td>Barber again. Try the sharper version.</td><td>Conditioning.</td></tr>
+      <tr><td><b>25</b></td><td>Night with the friends. Phone stays in pocket.</td><td>Train.</td></tr>
+      <tr><td><b>26</b></td><td>Draft the first message in the notebook. Don’t send it.</td><td>Mission block.</td></tr>
+      <tr><td><b>27</b></td><td>Ship the mission result. Evidence.</td><td>Train — personal best attempt.</td></tr>
+      <tr><td><b>28</b></td><td>Readiness test — all five questions, in writing.</td><td>Long walk.</td></tr>
+      <tr><td><b>29</b></td><td>Second progress photo. Compare. Sit with it.</td><td>Train.</td></tr>
+      <tr><td><b>30</b></td><td>Decide: reconnect (Ch. 8) or continue (Ch. 10). Either is a win.</td><td>Scorecard. Sleep.</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ TOOLS: SCRIPTS VAULT ============ -->
+<section class="page">
+  <div class="body">
+    <span class="kicker">Tools</span>
+    <div class="rule"></div>
+    <h2 style="margin-top:0;font-size:19pt">The Scripts Vault</h2>
+    <p>Every message you’ll need in the next ninety days. Personalise them; never copy them word for word. A woman can tell a script from a man.</p>
+    <div class="box">
+      <span class="kicker">She texts during no contact — “how are you?”</span>
+      <p>“Hey! All good here — been flat out with [mission/training], honestly in a good place. Hope you’re doing well too.” <i>(Reply hours later. End it there.)</i></p>
+    </div>
+    <div class="box">
+      <span class="kicker">She texts during no contact — emotional / wants to talk</span>
+      <p>“I appreciate you reaching out, really. I don’t think I’m in the right place for that conversation yet — I’m giving myself some space to sort my own head out. I hope you understand. Take care of yourself.”</p>
+    </div>
+    <div class="box">
+      <span class="kicker">She asks if you’re seeing anyone</span>
+      <p>“Ha — I’ve been focused on myself to be honest. Not really looking for anything right now.” <i>(True, light, no detail, no games.)</i></p>
+    </div>
+    <div class="box">
+      <span class="kicker">Suggesting the first meeting</span>
+      <p>“Fancy a coffee Thursday? I’ll be near [area] around six. No big deal if not.”</p>
+    </div>
+    <div class="box">
+      <span class="kicker">She cancels</span>
+      <p>“No stress — another time.” <i>(Nothing else. Don’t reschedule immediately; let her.)</i></p>
+    </div>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <div class="box">
+      <span class="kicker">She says “I need time”</span>
+      <p>“Of course. Take whatever time you need — I’m not going anywhere in a hurry, and I’m not waiting around either. Door’s open.”</p>
+    </div>
+    <div class="box">
+      <span class="kicker">She says no</span>
+      <p>“I understand, and I respect it. Thank you for being straight with me. I genuinely wish you well.” <i>(Then silence. Chapter 10.)</i></p>
+    </div>
+    <div class="box">
+      <span class="kicker">Mutual friend asks about her / offers to pass something on</span>
+      <p>“I wish her well. I’m focused on my own stuff right now — how are things with you?”</p>
+    </div>
+    <div class="box">
+      <span class="kicker">She brings up the breakup on the first meeting</span>
+      <p>“Yeah. You were right about a lot of that. I’ve been working on it. But I didn’t come to relitigate anything — tell me about [her thing].”</p>
+    </div>
+    <div class="box">
+      <span class="kicker">She says yes — setting the tone</span>
+      <p>“Good. Then let’s do it properly this time. I’ll plan Saturday.”</p>
+    </div>
+    <h2>Messages you never send</h2>
+    <ul class="clean">
+      <li>Anything after 10 p.m. or after a drink.</li>
+      <li>Anything over four lines.</li>
+      <li>Anything with “please,” “just,” or “I can’t.”</li>
+      <li>Anything that asks how she feels about you.</li>
+      <li>Anything that mentions another woman.</li>
+      <li>Anything you wouldn’t send if you knew she’d show it to her best friend.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TOOLS: SCORECARD ============ -->
+<section class="page">
+  <div class="body">
+    <span class="kicker">Tools · Print this page</span>
+    <div class="rule"></div>
+    <h2 style="margin-top:0;font-size:19pt">The Daily Scorecard</h2>
+    <p>Tick each box every night. Four out of five is a good day. Five is a great one. Any day with the Silence box unticked restarts the thirty days.</p>
+    <table>
+      <tr><th style="width:40px">Day</th><th>Silence</th><th>Trained</th><th>Mission 90'</th><th>Kept my word</th><th>No alcohol</th><th style="width:34%">Today’s win</th></tr>
+      <tr><td>1</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>2</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>3</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>4</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>5</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>6</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>7</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>8</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>9</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>10</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>11</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>12</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>13</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>14</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>15</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+    </table>
+  </div>
+</section>
+<section class="page">
+  <div class="body">
+    <span class="kicker">Tools · The Daily Scorecard (cont.)</span>
+    <div class="rule"></div>
+    <table>
+      <tr><th style="width:40px">Day</th><th>Silence</th><th>Trained</th><th>Mission 90'</th><th>Kept my word</th><th>No alcohol</th><th style="width:34%">Today’s win</th></tr>
+      <tr><td>16</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>17</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>18</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>19</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>20</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>21</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>22</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>23</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>24</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>25</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>26</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>27</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>28</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>29</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+      <tr><td>30</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td></td></tr>
+    </table>
+    <div class="box dark" style="margin-top:22px">
+      <span class="kicker">Day 30 — sign it</span>
+      <p>I completed the Alpha Reset. I kept silence for 30 days. I trained, I built, I kept my word. Whatever happens next, I am not the man who started this.</p>
+      <p style="margin-top:14px;color:#8C8577">Signed: ______________________ &nbsp;&nbsp; Date: ____________</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="page closing">
+  <div class="in">
+    <div class="k">One last thing</div>
+    <h1>She left the man<br>you stopped being.<br>You just met the one<br>you became.</h1>
+    <p>If this book changed something for you, pass it on to a friend who’s staring at his phone tonight. He doesn’t need advice. He needs a protocol.</p>
+    <p style="margin-top:40px;font-family:var(--sans);font-size:7.5pt;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold)">Alpha Reset Press · alphareset.co</p>
+  </div>
+</section>
+
+</body>
+</html>

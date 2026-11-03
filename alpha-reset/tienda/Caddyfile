@@ -1,0 +1,6 @@
+# Cambia el dominio. Caddy saca el certificado SSL solo.
+# Si usas Cloudflare con el proxy (nube naranja), pon SSL/TLS en modo "Full".
+alphareset.co {
+    encode gzip
+    reverse_proxy shop:3000
+}

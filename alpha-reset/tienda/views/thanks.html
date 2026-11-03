@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Welcome to the Reset — Download</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<!-- Meta Pixel: paste here -->
+<script src="/consent.js" defer></script>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="/">ALPHA<span>RESET</span></a></div></nav>
+<section class="cta" style="padding:70px 0"><div class="wrap narrow">
+
+  <div id="paid" style="display:none">
+    <div class="k">Order confirmed · Day 0</div>
+    <h1>Welcome to the Reset.</h1>
+    <p class="lead">Your files are downloading now. If it doesn’t start, use the button. Put the phone face-down and read Chapter 00 tonight — Day 1 starts tomorrow morning.</p>
+    <a class="btn big" id="dl" href="{{DOWNLOAD_URL}}">Download your files</a>
+    <p class="sub">Receipt sent to <b>{{EMAIL}}</b>. This link works for 30 days — bookmark this page.</p>
+    <p class="sub" id="hasScripts" style="display:none">Your download is a ZIP: the book, the 2 A.M. Protocol and the Scripts Pack.</p>
+
+    <!-- ===== UPSELL: Scripts Pack (only if not already bought) ===== -->
+    <div class="upsell" id="upsell" style="display:none">
+      <div class="k">One-click add-on · this page only</div>
+      <h2 style="font-size:30px">The message is where men blow it. <em style="color:var(--gold);font-style:normal">Don’t.</em></h2>
+      <p>You’ve got the protocol. The Scripts Pack is the 60 messages that go with it — one for every situation in the next 90 days, including the ones the book doesn’t have room for: she texts during silence, she cancels twice, she says “I need time”, a mutual friend fishes, and the 2 a.m. texts you send to yourself instead of her.</p>
+      <ul class="check">
+        <li>60 copy-and-personalise messages, organised by phase (Day 0 → Day 90)</li>
+        <li>The 5 laws every message follows, and the 6 things you never send</li>
+        <li>Added to your download instantly — same link, now a ZIP</li>
+      </ul>
+      <p><span style="color:var(--muted)">Add-on price, this page only:</span> &nbsp;<b style="color:#fff;font-size:28px">${{SCRIPTS_PRICE}}</b> <span class="sub" style="display:inline">— one click, no re-entering card details on most browsers</span></p>
+      <div class="yn">
+        <button class="btn big" id="yes">Yes — add the Scripts Pack for ${{SCRIPTS_PRICE}}</button>
+        <button class="no" id="no">No thanks, I’ll write my own</button>
+      </div>
+    </div>
+
+    <div class="guar" style="text-align:left;margin-top:34px"><div class="seal">RULE<br>#1</div><p>You do not contact her for 30 days. Tell two friends tonight that you’re doing it. If you waver, they remind you.</p></div>
+  </div>
+
+  <div id="unpaid" style="display:none">
+    <div class="k">Hmm</div>
+    <h1>We couldn’t confirm a payment.</h1>
+    <p class="lead">If you just paid, wait a few seconds and refresh. If the problem continues, reply to your Stripe receipt email and we’ll send the files by hand.</p>
+    <a class="btn big" href="/book#buy">Back to the book</a>
+  </div>
+</div></section>
+<script>
+  var paid="{{PAID}}"==="1", hasScripts="{{HAS_SCRIPTS}}"==="1", sid="{{SID}}", email="{{EMAIL}}";
+  document.getElementById(paid?"paid":"unpaid").style.display="block";
+  if(paid){
+    if(window.fbq) fbq("track","Purchase",{value:hasScripts?46.99:29.99,currency:"USD"},{eventID:sid});
+    if(hasScripts) document.getElementById("hasScripts").style.display="block";
+    else document.getElementById("upsell").style.display="block";
+    setTimeout(function(){ var a=document.createElement("iframe"); a.style.display="none"; a.src=document.getElementById("dl").href; document.body.appendChild(a); },1200);
+    document.getElementById("yes").addEventListener("click",async e=>{
+      var b=e.currentTarget; b.disabled=true; b.textContent="Opening checkout…";
+      try{const r=await fetch("/api/upsell",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({session_id:sid,email:email})}); const j=await r.json(); if(j.url) location.href=j.url; else throw 0;}
+      catch(_){ b.disabled=false; b.textContent="Yes — add the Scripts Pack"; }
+    });
+    document.getElementById("no").addEventListener("click",()=>{ document.getElementById("upsell").style.display="none"; });
+  }
+</script>
+</body>
+</html>

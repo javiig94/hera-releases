@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Can You Still Get Her Back? — 60-Second Assessment</title>
+<meta name="description" content="9 questions. 60 seconds. Find out where you actually stand — and the exact plan for your situation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .qwrap{max-width:640px;margin:0 auto;padding:40px 20px 100px}
+  .bar{height:4px;background:rgba(255,255,255,.08);border-radius:2px;margin:18px 0 34px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
+  .step{display:none}.step.on{display:block;animation:f .25s ease}@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .step h2{font-size:clamp(26px,4vw,36px);margin-bottom:22px}
+  .qopt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#EDE6D6;padding:18px 20px;border-radius:6px;cursor:pointer;font-size:17px;font-family:inherit;margin-bottom:10px;transition:.15s}
+  .qopt:hover{border-color:var(--gold);background:rgba(201,162,74,.08);transform:translateX(3px)}
+  .qn{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .mini{font-size:13px;color:var(--muted);margin-top:12px}
+  /* result */
+  .res{max-width:720px}
+  .res .score{display:flex;gap:22px;align-items:center;border:1px solid var(--gold);border-radius:6px;padding:22px;background:#0F0F10;margin:22px 0}
+  .res .score b{font-size:48px;font-weight:900;letter-spacing:-.04em;color:var(--gold);line-height:1}.res .score span{color:#CFC7B5;font-size:15px}
+  .res h2{font-size:clamp(28px,4.4vw,42px)}
+  .res .box{border-left:3px solid var(--gold);padding:4px 0 4px 18px;margin:18px 0;color:#CFC7B5}.res .box b{color:#fff;display:block;margin-bottom:4px}
+  .plan{border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:22px;margin:26px 0;background:rgba(255,255,255,.02)}
+  .plan h3{margin:0 0 12px;font-size:20px}.plan ol{margin:0;padding-left:20px;color:#CFC7B5}.plan li{margin-bottom:8px}.plan li b{color:#fff}
+  .emailbox{border:1px dashed rgba(201,162,74,.5);border-radius:6px;padding:18px;margin-top:30px}
+  .emailbox form{display:flex;gap:10px;margin-top:10px}.emailbox input{flex:1;padding:14px;border-radius:4px;border:1px solid rgba(255,255,255,.2);background:#0B0B0C;color:#fff;font-size:15px;font-family:inherit}
+  .emailbox .btn{padding:14px 18px;font-size:14px}.emailbox .ok{display:none;color:var(--gold);font-weight:700;margin-top:10px}
+  .loading{text-align:center;padding:60px 0}.loading .k{animation:pulse 1s infinite}@keyframes pulse{50%{opacity:.4}}
+  @media(max-width:860px){.emailbox form{flex-direction:column}.res .score b{font-size:40px}}
+</style>
+<!-- Meta Pixel: paste here -->
+<script src="/consent.js" defer></script>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="/">ALPHA<span>RESET</span></a><span style="font-size:13px;color:var(--muted)">60-second assessment</span></div></nav>
+
+<div class="qwrap">
+  <div class="bar"><i id="bar"></i></div>
+
+  <div class="step on" data-step="0">
+    <div class="k">Free · 9 questions · 60 seconds</div>
+    <h1 style="font-size:clamp(34px,6vw,54px);margin-top:14px">Can you still get her back?</h1>
+    <p class="lead">Answer honestly. You’ll get a straight read on where you stand, what’s working against you, and the exact plan for your situation — based on 1,000+ men we’ve coached in person.</p>
+    <button class="btn big" onclick="go(1)">Start the assessment →</button>
+    <p class="mini">No account. No email needed to see your result. Your answers aren’t shared.</p>
+  </div>
+
+  <div class="step" data-step="1"><div class="qn">1 of 9</div><h2>How long since the breakup?</h2>
+    <button class="qopt" onclick="ans('time','fresh')">Less than 2 weeks</button>
+    <button class="qopt" onclick="ans('time','mid')">2–8 weeks</button>
+    <button class="qopt" onclick="ans('time','long')">2–6 months</button>
+    <button class="qopt" onclick="ans('time','old')">More than 6 months</button>
+  </div>
+  <div class="step" data-step="2"><div class="qn">2 of 9</div><h2>Who ended it?</h2>
+    <button class="qopt" onclick="ans('who','her')">She did</button>
+    <button class="qopt" onclick="ans('who','me')">I did — and I regret it</button>
+    <button class="qopt" onclick="ans('who','mutual')">It was mutual / it fizzled out</button>
+  </div>
+  <div class="step" data-step="3"><div class="qn">3 of 9</div><h2>Since then, have you…</h2>
+    <button class="qopt" onclick="ans('contact','none')">Gone silent — no messages at all</button>
+    <button class="qopt" onclick="ans('contact','some')">Sent a few messages, nothing crazy</button>
+    <button class="qopt" onclick="ans('contact','lots')">Begged, sent long messages, or kept texting</button>
+    <button class="qopt" onclick="ans('contact','talking')">We still talk regularly</button>
+  </div>
+  <div class="step" data-step="4"><div class="qn">4 of 9</div><h2>Are you still watching her?</h2>
+    <button class="qopt" onclick="ans('watch','no')">No — muted or blocked, I don’t look</button>
+    <button class="qopt" onclick="ans('watch','sometimes')">I check her stories sometimes</button>
+    <button class="qopt" onclick="ans('watch','daily')">Every day. I know when she’s online.</button>
+  </div>
+  <div class="step" data-step="5"><div class="qn">5 of 9</div><h2>Is she seeing someone?</h2>
+    <button class="qopt" onclick="ans('other','no')">No</button>
+    <button class="qopt" onclick="ans('other','maybe')">I’m not sure / I’ve heard rumours</button>
+    <button class="qopt" onclick="ans('other','yes')">Yes</button>
+  </div>
+  <div class="step" data-step="6"><div class="qn">6 of 9</div><h2>Be honest — what was the real reason?</h2>
+    <button class="qopt" onclick="ans('why','edge')">I lost my edge — got comfortable, stopped leading</button>
+    <button class="qopt" onclick="ans('why','needy')">I got needy, jealous or controlling</button>
+    <button class="qopt" onclick="ans('why','conflict')">Constant arguments / moods / walking on eggshells</button>
+    <button class="qopt" onclick="ans('why','direction')">I wasn’t going anywhere in life</button>
+    <button class="qopt" onclick="ans('why','unknown')">I genuinely don’t know</button>
+  </div>
+  <div class="step" data-step="7"><div class="qn">7 of 9</div><h2>What have you actually changed since?</h2>
+    <button class="qopt" onclick="ans('changed','nothing')">Honestly, nothing yet</button>
+    <button class="qopt" onclick="ans('changed','trying')">I’ve started — gym, seeing friends, but no plan</button>
+    <button class="qopt" onclick="ans('changed','plan')">I’m on a structured plan and sticking to it</button>
+  </div>
+  <div class="step" data-step="8"><div class="qn">8 of 9</div><h2>How much of your day is about her?</h2>
+    <button class="qopt" onclick="ans('mind','all')">Most of it. I can’t focus on anything else.</button>
+    <button class="qopt" onclick="ans('mind','half')">A lot, but I get things done</button>
+    <button class="qopt" onclick="ans('mind','some')">She crosses my mind, I move on</button>
+  </div>
+  <div class="step" data-step="9"><div class="qn">9 of 9</div><h2>What do you want?</h2>
+    <button class="qopt" onclick="ans('goal','back')">Her back — and to keep her this time</button>
+    <button class="qopt" onclick="ans('goal','unsure')">I don’t know if I want her back or just want the pain to stop</button>
+    <button class="qopt" onclick="ans('goal','me')">To become a better man, whatever happens with her</button>
+  </div>
+
+  <div class="step loading" data-step="10"><div class="k">Analysing your answers…</div><p class="mini" id="ltxt">Building your 30-day plan</p></div>
+
+  <!-- ===== RESULT = MINI SALES PAGE ===== -->
+  <div class="step res" data-step="11">
+    <div class="k">Your result</div>
+    <h2 id="r_title"></h2>
+    <div class="score"><div><b id="r_pct"></b><span style="display:block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:8px">Reset score / 100</span></div><div><span id="r_pctlabel"></span></div></div>
+    <div class="box"><b>What’s working for you</b><span id="r_for"></span></div>
+    <div class="box" style="border-color:var(--red)"><b>What’s working against you</b><span id="r_against"></span></div>
+    <div class="box"><b>Do this tonight</b><span id="r_tonight"></span></div>
+
+    <div class="plan">
+      <h3>Your 30-day plan, in order</h3>
+      <ol id="r_plan"></ol>
+      <p class="mini" style="margin-top:12px">This is the ALPHA RESET protocol applied to your answers. The book is the full version — every day planned, every message scripted.</p>
+    </div>
+
+    <div class="pricebox" style="max-width:none;text-align:left">
+      <span class="badge">Launch price</span>
+      <h3 style="margin:14px 0 6px;font-size:24px">Get the full protocol for your situation</h3>
+      <p style="color:#CFC7B5;font-size:15px;margin-bottom:14px">ALPHA RESET — The 30-Day Protocol for Men. Premium PDF, instant download.</p>
+      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="price" style="font-size:44px">$29.99</span><span style="color:var(--muted)">one-time · launch price, rises to $47 after launch</span></div>
+      <ul class="check" style="margin:16px 0">
+        <li>The book — 59 pages, 10 chapters, starting with <b id="r_ch"></b></li>
+        <li>30-Day Calendar + Daily Scorecard + Readiness Test</li>
+        <li><b>Bonus:</b> The 2 A.M. Relapse Protocol</li>
+        <li>Instant download · lifetime updates · discreet billing (“AR PRESS”)</li>
+      </ul>
+      <label class="bump"><input type="checkbox" id="bump"><div><span class="most">Most men add this</span><b>Add The Scripts Pack — 60 messages</b><span>Every message for the next 90 days: the closing message, what to reply if she texts during silence, the first message, the “us” talk, what to say to a no. <b style="display:inline;font-size:14px">$17 today</b> — only available here, with the book.</span></div><span class="bp">+$17</span></label>
+      <button class="btn big" id="buybtn" style="width:100%;justify-content:center">Start my Reset tonight · <span id="tot">$29.99</span></button>
+      <div class="pay"><i class="lock">🔒 SSL</i><i class="v">VISA</i><i>Mastercard</i><i>AMEX</i><i>Apple Pay</i><i>Google Pay</i></div>
+      <div class="secure"><svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 0 0-8 0v4M5 11h14v10H5z"/></svg>Secure checkout by Stripe · 30-day do-the-work refund</div>
+      <p class="mini" style="margin-top:12px">By purchasing you agree to the <a href="/legal#terms" style="color:var(--muted)">Terms</a> and to immediate delivery of digital content, which waives the 14-day withdrawal right where it applies. <a href="/legal#refund" style="color:var(--muted)">Refund policy</a>.</p>
+    </div>
+
+    <div class="trust" style="margin:22px -20px 0;border-radius:6px;border:1px solid rgba(255,255,255,.06)">
+      <span><b>1,000+ men</b> coached in person</span><span><b>Instant</b> delivery</span><span><b>30-day</b> refund</span>
+    </div>
+
+    <p style="text-align:center;margin-top:22px"><a href="/book" id="r_more" style="color:#CFC7B5;font-size:15px">See everything inside the book →</a></p>
+
+    <div class="emailbox">
+      <div class="k">Optional</div>
+      <b style="color:#fff;display:block;margin-top:6px">Email me my result + the free 7 Mistakes Checklist</b>
+      <form id="emailform"><input type="email" id="email" required placeholder="your@email.com"><button class="btn" type="submit">Send it</button></form>
+      <div class="ok" id="emailok">Sent. <a href="/free/ALPHA_RESET_7_Mistakes_Checklist.pdf" style="color:var(--gold)">Download the checklist now.</a></div>
+      <p class="mini">No spam. Unsubscribe in one click.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const A={}; let step=0, KEY=null, SCORE=0;
+function show(n){step=n;document.querySelectorAll('.step').forEach(s=>s.classList.toggle('on',+s.dataset.step===n));document.getElementById('bar').style.width=Math.min(100,n/11*100)+'%';scrollTo({top:0,behavior:'smooth'});}
+function go(n){show(n)}
+function ans(k,v){A[k]=v;if(window.fbq&&step===1)fbq('trackCustom','QuizStart');if(step===9){show(10);setTimeout(result,1400);}else show(step+1);}
+function profile(){
+  let p=58;
+  p+={fresh:5,mid:10,long:0,old:-12}[A.time];
+  p+={her:0,me:8,mutual:4}[A.who];
+  p+={none:12,some:0,lots:-15,talking:-4}[A.contact];
+  p+={no:6,sometimes:-2,daily:-8}[A.watch];
+  p+={no:8,maybe:0,yes:-14}[A.other];
+  p+={edge:6,needy:2,conflict:-4,direction:6,unknown:-2}[A.why];
+  p+={nothing:-4,trying:2,plan:8}[A.changed];
+  p+={all:-6,half:0,some:4}[A.mind];
+  p=Math.max(18,Math.min(88,p));
+  let key;
+  if(A.contact==='lots'||A.watch==='daily') key='damage';
+  else if(A.time==='fresh'||A.time==='mid') key='window';
+  else if(A.other==='yes') key='rebound';
+  else key='cold';
+  return {p,key};
+}
+const R={
+  damage:{title:"Situation: Damage Control.",ch:"Chapters 2–3",for:"It's recent, and most men in your position think it's over — it rarely is. Begging and checking feel permanent. They aren't, unless you keep doing it.",against:"Every message and every story you've watched since the breakup confirmed the reason she left: a man whose world collapses without her. The next thing you do is the one that matters.",tonight:"Send nothing. Mute her everywhere — block if you can't resist. Delete the drafts. Tomorrow morning: one composed closing message (there's an exact script), then 30 days of silence while you rebuild.",plan:["<b>Days 1–2:</b> Stop the bleeding — the 7 mistakes, the one closing message (Ch. 2–3).","<b>Days 1–30:</b> The Silence Protocol — no contact done right, week by week (Ch. 3).","<b>Days 3–30:</b> The rebuild — frame, body, mission, friends (Ch. 4–7).","<b>Day 30:</b> The Readiness Test — only then, the first message (Ch. 8)."]},
+  window:{title:"Situation: The Critical Window.",ch:"Chapter 3",for:"You're inside the window where the right moves change everything. The moment you step back properly, the pressure comes off her and the good memories come back.",against:"The next 14 days decide whether you keep a door open or nail it shut. Most men panic here and send the essay.",tonight:"Go silent — properly. No likes, no stories, no 'hope you're ok'. Pick your mission. Book your first training session for tomorrow at 7.",plan:["<b>Tonight:</b> The honest autopsy — which of the four verdicts is yours (Ch. 1).","<b>Days 1–30:</b> The Silence Protocol, week by week — including what to do if she texts (Ch. 3).","<b>Days 1–30:</b> Body Standard + Mission — the change she'll see before you say a word (Ch. 5–6).","<b>Day 30:</b> The first message, the first meeting, the 'us' talk (Ch. 8)."]},
+  rebound:{title:"Situation: She's Seeing Someone.",ch:"Chapters 4–7",for:"Rebounds are common and usually short — and she will compare him to the man she left. You decide which version of you she compares him to.",against:"If you look like you're waiting, you lose. If you compete with him, you lose. The only move is becoming undeniably different, visibly, without saying a word to her.",tonight:"Mute her and him. Zero reaction, zero posts aimed at her. Start the Body Standard tomorrow at 7 a.m.",plan:["<b>Days 1–30:</b> Silence — and the rules for mutual friends who fish (Ch. 3, 7).","<b>Days 1–30:</b> The Alpha Frame + Body Standard — outcome independence is your whole game now (Ch. 4–5).","<b>Days 10–30:</b> Rebuild your world — brotherhood, options, the right social media (Ch. 7).","<b>Day 30+:</b> Reaching out when there's someone else — and when not to (Ch. 8, 10)."]},
+  cold:{title:"Situation: Gone Cold.",ch:"Chapter 1",for:"Time is on your side if you use it. The pressure's off her, the panic's gone, and you can rebuild without an audience.",against:"Silence alone does nothing. If you've changed nothing in the months since, reaching out now just reminds her why she left.",tonight:"Write the honest autopsy — the four verdicts — on paper. Then book your first training session for tomorrow.",plan:["<b>Tonight:</b> The Autopsy — why she really left (Ch. 1).","<b>Days 1–30:</b> The rebuild — frame, body, mission, friends — with the scorecard (Ch. 4–7).","<b>Day 30:</b> The Readiness Test — do you want her, or to stop hurting? (Ch. 8).","<b>Day 30+:</b> The first message written for exactly this — and what to do with a no (Ch. 8, 10)."]}
+};
+function result(){
+  const {p,key}=profile(); KEY=key; SCORE=p; const r=R[key];
+  document.getElementById('r_title').textContent=r.title;
+  document.getElementById('r_pct').textContent=p;
+  document.getElementById('r_pctlabel').textContent=(p>=65?'Strong starting position — if you stop the damage tonight and run the protocol.':p>=45?'Real ground to recover — but only with 30 days of real change.':'Low right now. The protocol wins either way: a better man, with options.');
+  document.getElementById('r_for').textContent=r.for; document.getElementById('r_against').textContent=r.against; document.getElementById('r_tonight').textContent=r.tonight;
+  document.getElementById('r_plan').innerHTML=r.plan.map(x=>'<li>'+x+'</li>').join('');
+  document.getElementById('r_ch').textContent=r.ch; document.getElementById('r_more').href='/book?p='+key;
+  try{localStorage.setItem('ar_profile',key)}catch(_){}
+  if(window.fbq) fbq('trackCustom','QuizComplete',{profile:key,score:p});
+  fetch('/api/quiz',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({answers:A,profile:key,score:p})}).catch(()=>{});
+  show(11);
+}
+const bump=document.getElementById('bump'); let tot=document.getElementById('tot');
+bump.addEventListener('change',()=>{tot.textContent=bump.checked?'$46.99':'$29.99';});
+document.getElementById('buybtn').addEventListener('click',async e=>{
+  const b=e.currentTarget; b.disabled=true; b.textContent='Opening secure checkout…';
+  const eid='ic_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+  if(window.fbq) fbq('track','InitiateCheckout',{value:bump.checked?46.99:29.99,currency:'USD'},{eventID:eid});
+  try{const r=await fetch('/api/checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({scripts:bump.checked,event_id:eid,profile:KEY})}); const j=await r.json(); if(j.url) location.href=j.url; else throw 0;}
+  catch(_){ b.disabled=false; b.innerHTML='Start my Reset tonight · <span id="tot">'+(bump.checked?'$46.99':'$29.99')+'</span>'; tot=document.getElementById('tot'); alert('Checkout is unavailable right now. Please try again in a minute.'); }
+});
+document.getElementById('emailform').addEventListener('submit',async e=>{
+  e.preventDefault(); const email=document.getElementById('email').value; const eid='lead_'+Date.now()+'_'+Math.random().toString(36).slice(2);
+  try{await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,src:'quiz',answers:A,profile:KEY,score:SCORE,event_id:eid})});}catch(_){}
+  if(window.fbq) fbq('track','Lead',{content_name:'quiz_'+KEY},{eventID:eid});
+  document.getElementById('emailok').style.display='block'; e.target.style.display='none';
+});
+</script>
+</body>
+</html>
