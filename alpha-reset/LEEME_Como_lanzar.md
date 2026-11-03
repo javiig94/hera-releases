@@ -49,7 +49,7 @@ Por qué así: el 30–50% de los que terminan un quiz abandonan en la puerta de
 2. **Dominio**: en `tienda/Caddyfile` y en `SITE_URL` del `.env`. Registro A en Cloudflare → IP del Hetzner.
 3. **Píxel de Meta**: pégalo en el `<head>` de `public/index.html`, `public/book.html` y `views/thanks.html` (hay un comentario marcando el sitio). Los eventos InitiateCheckout y Purchase ya están disparados.
 
-Opcional: cambia `hello@alphareset.co` por tu email. Las páginas de Términos / Privacidad / Reembolsos ya existen en `tienda/public/legal.html` (enlazadas desde todos los footers): **rellena los corchetes** `[LEGAL NAME]`, `[ADDRESS]`, `[COUNTRY]`, `[VAT/TAX ID]`.
+Opcional: cambia `hello@spelloraguides.com` por tu email. Las páginas de Términos / Privacidad / Reembolsos ya existen en `tienda/public/legal.html` (enlazadas desde todos los footers): **rellena los corchetes** `[LEGAL NAME]`, `[ADDRESS]`, `[COUNTRY]`, `[VAT/TAX ID]`.
 
 ## Subirlo
 

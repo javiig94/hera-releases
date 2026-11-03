@@ -33,7 +33,7 @@ En Cloudflare, registro **A** del dominio → IP del servidor Hetzner. Si dejas 
 git clone <tu repo>  # o sube la carpeta app/ por SFTP
 cd app
 cp .env.example .env && nano .env      # pega STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, SITE_URL, DOWNLOAD_SECRET
-nano Caddyfile                          # cambia alphareset.co por tu dominio
+nano Caddyfile                          # cambia spelloraguides.com por tu dominio
 docker compose up -d --build
 ```
 Caddy saca el certificado SSL solo. Listo: `https://TUDOMINIO`.

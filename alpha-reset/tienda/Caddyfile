@@ -1,6 +1,10 @@
-# Cambia el dominio. Caddy saca el certificado SSL solo.
-# Si usas Cloudflare con el proxy (nube naranja), pon SSL/TLS en modo "Full".
-alphareset.co {
+# Dominio: spelloraguides.com. Caddy saca el certificado SSL solo (Let's Encrypt).
+# En Cloudflare deja el registro A en "DNS only" (nube gris) hasta que el certificado exista;
+# si luego activas el proxy (nube naranja), pon SSL/TLS en modo "Full (strict)".
+spelloraguides.com {
     encode gzip
     reverse_proxy shop:3000
+}
+www.spelloraguides.com {
+    redir https://spelloraguides.com{uri} permanent
 }

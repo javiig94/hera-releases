@@ -2,7 +2,7 @@
 
 **Para quién:** todo email que entra por `/quiz` o la checklist gratis y NO compra.
 **Herramienta:** cualquiera (MailerLite, Brevo, Klaviyo, ConvertKit). Importa `tienda/private/leads.jsonl` o conecta el endpoint `/api/lead` a su API. Deja de enviar cuando el email aparece en `orders.jsonl`.
-**Remitente:** "Coach at Alpha Reset" <hello@alphareset.co>. Texto plano, sin diseño. Parece un email de una persona, no de una tienda.
+**Remitente:** "Coach at Alpha Reset" <hello@spelloraguides.com>. Texto plano, sin diseño. Parece un email de una persona, no de una tienda.
 **Cadencia:** Día 0 (inmediato), 1, 2, 4, 6, 7.
 
 ---
